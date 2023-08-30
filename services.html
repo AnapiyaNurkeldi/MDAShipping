@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MDA Shipping</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="fullscreen-menu hide" id="fullscreenMenu">
+            <svg id="closeModalBtn" class="close" xmlns="http://www.w3.org/2000/svg" width="17" height="29" viewBox="0 0 17 29" fill="none">
+                <path d="M14.5 27L2.21213 14.7121C2.09497 14.595 2.09497 14.405 2.21213 14.2879L14.5 2" stroke="#3579F4" stroke-width="4" stroke-linecap="round"/>
+            </svg>
+            <div class="menu-content" >
+                <div class="ologo">
+                    <img src="./img/logow.svg" class="img-fluid" alt="">
+                </div>
+
+                <ul class="menu-items">
+                    <li><a href="./index.html" id="homee">HOME</a></li>
+                    <li><a href="./services.html" class="active" id="servicess">SERVICES</a></li>
+                    <li><a href="#contact" id="contactt">CONTACT</a></li>
+                </ul>
+    
+               
+                <div class="social-media">
+                    <a href="#" class="social-icon"><img src="./img/telegram.png" alt="Telegram"></a>
+                    <a href="#" class="social-icon"><img src="./img/WhatsApp.png" alt="WhatsApp"></a>
+                    <a href="#" class="social-icon"><img src="./img/Youtube.png" alt="Youtube"></a>
+                    <a href="#" class="social-icon"><img src="./img/TikTok.png" alt="TikTok"></a>
+                 
+                </div>
+    
+                
+                <div class="language-switcher">
+                    <a href="#" class="language en active-color" onclick="changeLanguage('en')">EN</a>
+                    <span class="separator">/</span>
+                    <a href="#" class="language ru" onclick="changeLanguage('ru')">RU</a>
+                </div>
+            </div>
+        </div>
+
+
+        <header>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <img src="./img/logo.svg" alt="MDAP{}SHIPPING" class="logo img-fluid">
+                    </div>
+                    <div class="btn-open-modal" id="openModalBtn">
+                        <svg class="open" xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                            <circle cx="6.5" cy="6.5" r="5.5" stroke="#3579F4" stroke-width="2"/>
+                            <circle cx="24.5" cy="6.5" r="5.5" stroke="#3579F4" stroke-width="2"/>
+                            <circle cx="6.5" cy="24.5" r="5.5" stroke="#3579F4" stroke-width="2"/>
+                            <circle cx="24.5" cy="24.5" r="5.5" stroke="#3579F4" stroke-width="2"/>
+                        </svg>
+                       
+                    </div>
+                
+                    <div class="navbar-collapse justify-content-center" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item ">
+                                <a class="nav-link" id="home" aria-current="page" href="./index.html">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link  active-color active" id="services" aria-current="page">SERVICES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#contact" class="nav-link" id="contact" aria-current="page">CONTACT</a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="ml-auto socials">
+                        <ul class="navbar-nav socials">
+                            <li class="nav-item">
+                                <img src="./img/telegram.png" class="img-fluid ml-2" width="41px" alt="Telegram">
+                            </li>
+                            <li class="nav-item">
+                                <img src="./img/WhatsApp.png" class="img-fluid ml-2" width="41px" alt="WhatsApp">
+                            </li>
+                            <li class="nav-item">
+                                <img src="./img/Youtube.png" class="img-fluid ml-2" width="41px" alt="Youtube">
+                            </li>
+                            <li class="nav-item">
+                                <img src="./img/TikTok.png" class="img-fluid ml-2" width="41px" alt="TikTok">
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="languages_change ml-auto">
+                        <div class="languages">
+                            <span class="ru" onclick="changeLanguage('ru')">RU</span> <span class="active-color">/</span> <span class="english active-color" onclick="changeLanguage('en')">EN</span>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header> 
+
+
+        <div class="container content">
+            <div class="texts">
+                <h1 class="wedo">Services</h1>
+            </div>
+            <div class="row">
+              <div class="col-4 sm">
+                <h4 class="buy">Buying<br>assistance</h4>
+                <img src="./img/ye-car.png" class="img-fluid" alt="">
+              </div>
+              <div class="col-4 sm">
+                <h4 class="auto">Auto transport</h4>
+                <img src="./img/truck.png" style="margin-top: 10px;" class="img-fluid" alt="">
+              </div>
+              <div class="col-4 big">
+                <h4 class="ware">Warehousing</h4>
+                <img src="./img/lotcars.png" class="img-fluid" alt="">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-4 big">
+                <h4 class="load">Automobile loading</h4>
+                <img src="./img/bmw.png" class="img-fluid" alt="">
+              </div>
+              <div class="col-4 sm">
+                <h4 class="motor">Motorcycle <br>loading</h4>
+                <img src="./img/moto.png" class="img-fluid" alt="">
+              </div>
+              <div class="col-4 sm">
+                <h4 class="boat">Boat <br> loading</h4>
+                <img src="./img/Boats.png" class="img-fluid" alt="">
+              </div>
+            </div>
+            <div class="row">
+                <div class="col-4 sm">
+                  <h4 class="Heavy">Heavy<br>machinery<br>loading</h4>
+                  <img src="./img/tank.png" style="margin-top: -50px;" class="img-fluid imgs" alt="">
+                </div>
+                <div class="col-4 sm">
+                  <h4 class="Dis">Dismantling</h4>
+                  <img style="margin-top: 0px;" src="./img/zap-removebg-preview.png" class="img-fluid imgs" alt="">
+                </div>
+                <div class="col-4 big">
+                  <h4 class="Parts">Parts <br> purchase <br> assistance</h4>
+                  <img  style="margin-top: -30px; width: 383px; height: 182px;" src="./img/parts.png" class="img-fluid imgs" alt="">
+                </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6"> 
+                <div class="why-us-us">
+                  <h1 style="color: #3579F4;
+                  text-align: center;
+                  font-family: Inter;
+                  font-size: 18px;
+                  font-style: normal;
+                  font-weight: 600;
+                  line-height: normal;
+                  text-transform: uppercase;">why you should choose us</h1>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                  <div class="why-us-text">
+                      <p style="color: rgba(24, 22, 45, 0.90);
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-align: left;">We do business in the B2B field. Our target audience is car dealers, exporters and any other auto
+                          industry businesses.</p>
+                      <p style="color: rgba(24, 22, 45, 0.90);
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-align: left;">We can handle any kind of vehicles and are specialized in the automotive industry. Our
+                          well-organized logistics will help you get quality service in a reasonable time.</p>
+                      <p style="color: rgba(24, 22, 45, 0.90);
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-align: left;">We provide you the safest loading process and take care of all the export hassle. You will receive
+                          all the necessary documents as well as photo and video loading reports.</p>
+                  </div>
+              </div>
+              </div>
+              </div>
+
+          <div class="container content contact">
+            <div class="row">
+                <div class="col-md-8">
+                    <form class="contact-us">
+                        <h3 class="txt-contact">Contact us</h3>
+                        <p class="txt-contact-p">Contact us if you need more information <br>
+                         about our services</p>
+                         <input type="text" class="form-control text-white" placeholder="Name">
+                         <input type="text" class="form-control text-white" placeholder="Phone Number">
+                         <input type="text" class="form-control text-white msg" placeholder="Message">
+                         <div class="button">
+                            <button class="btn-primary send">Send a Message</button>
+                         </div>
+                    </form>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-img">
+                        <img src="./img/contact-car.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+                
+            </div>
+            <footer>
+                <div class="logo">
+                    <img src="./img/logow.svg" alt="MDAP{}SHIPPING" class="img-fluid">
+                </div>
+                <div class="copyright">
+                    <p class="copy">Copyright © 2022 Cargo. All Rights reserved.</p>
+                </div>
+                
+            </footer>
+          </div>
+
+          
+    </div>
+    <script src="./js/script.js"></script>
+    <script src="./js/lang.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.5.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
